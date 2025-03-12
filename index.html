@@ -2,39 +2,28 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>MIB-BodyPartPhase</title>
-<!--   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,10 +32,43 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    /* 响应式容器 */
+    .responsive-container {
+      width: 80%; /* 默认宽度为屏幕宽度的 80% */
+      max-width: 1200px; /* 最大宽度限制 */
+      margin: 0 auto; /* 居中显示 */
+    }
+
+    /* 视频部分 */
+    .responsive-video {
+      width: 100%; /* 视频宽度占满容器 */
+      height: auto; /* 高度自适应 */
+    }
+
+    /* Abstract 文字部分 */
+    .responsive-text {
+      width: 100%; /* 文字宽度占满容器 */
+      margin-top: 20px; /* 与视频的间距 */
+    }
+
+    /* 针对小屏幕调整宽度 */
+    @media (max-width: 768px) {
+      .responsive-container {
+        width: 90%; /* 小屏幕下宽度为 90% */
+      }
+    }
+
+    /* 针对大屏幕调整宽度 */
+    @media (min-width: 1200px) {
+      .responsive-container {
+        width: 70%; /* 大屏幕下宽度为 70% */
+      }
+    }
+  </style>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -54,22 +76,21 @@
           <div class="column has-text-centered">
             <h1 class="title is-2 publication-title">Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=ymXRJBYAAAAJ&hl=zh-CN" target="_blank">Minyue Dai</a><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=GStTsxAAAAAJ&hl=zh-CN&oi=ao" target="_blank">Jingbo Wang</a><sup>2</sup>,</span>
+                <a href="https://wangjingbo1219.github.io/" target="_blank">Jingbo Wang</a><sup>2</sup>,</span>
               <span class="author-block">
                 <a href="https://vankouf.github.io/" target="_blank">Ke Fan</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="https://vankouf.github.io/" target="_blank">Bin Ji</a><sup>3</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=uZeBvd8AAAAJ&hl=en" target="_blank">Bin Ji</a><sup>3</sup>,</span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=ymXRJBYAAAAJ&hl=zh-CN" target="_blank">Haoyu Zhao</a><sup>4</sup>,</span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=dEzL5pAAAAAJ&hl=zh-CN&oi=ao" target="_blank">Junting Dong</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?hl=zh-CN&user=6JMV8NEAAAAJ" target="_blank">Bo Dai</a><sup>5</sup>
+                <a href="https://daibo.info/" target="_blank">Bo Dai</a><sup>5</sup>
               </span>
             </div>
 
@@ -78,111 +99,90 @@
                 <sup>3</sup>Shanghai Jiaotong University, <sup>4</sup>Wuhan University, <sup>5</sup>University of Hong Kong</span>
             </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2503.08180" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2503.08180" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
-
-
-                <!-- ArXiv abstract Link -->
+                    <span>Paper</span>
+                  </a>
+                </span>
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2503.08180" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
-              <!-- Github link -->
-              <span class="link-block">
-                <a href="" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
                 </span>
-                <span>Coming Soon</span>
-                </a>
-              </span>
-
-                      
+                <span class="link-block">
+                  <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Coming Soon</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<section class="hero teaser">
-  <div class="container is-fluid">
-    <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
-      <!-- 设置容器为16:9比例 -->
-      <div style="position: relative; width: 95%; aspect-ratio: 16 / 9;">
-        <video id="tree" 
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-          controls autoplay loop muted>
-          <source src="static/images/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Styled motion in-betweening is crucial for computer animation and gaming. However, existing methods typically encode motion styles by modeling whole-body motions, often overlooking the representation of individual body parts. This limitation reduces the flexibility of infilled motion, particularly in adjusting the motion styles of specific limbs independently. To overcome this challenge, we propose a novel framework that models motion styles at the body-part level, enhancing both the diversity and controllability of infilled motions. Our approach enables more nuanced and expressive animations by allowing precise modifications to individual limb motions while maintaining overall motion coherence. Leveraging phase-related insights, our framework employs periodic autoencoders to automatically extract the phase of each body part, capturing distinctive local style features. Additionally, we effectively decouple the motion source from synthesis control by integrating motion manifold learning and conditional generation techniques from both image and motion domains. This allows the motion source to generate high-quality motions across various styles, with extracted motion and style features readily available for controlled synthesis in subsequent tasks. Comprehensive evaluations demonstrate that our method achieves superior speed, robust generalization, and effective generation of extended motion sequences.
-          </p>
+  <!-- 视频部分 -->
+  <section class="hero teaser">
+    <div class="container is-fluid">
+      <div class="responsive-container">
+        <div class="responsive-video">
+          <video controls autoplay loop muted>
+            <source src="static/images/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <!-- 在这里插入 Pipeline 图 -->
-        <figure class="image is-centered">
-          <img src="static/images/pipeline.png" alt="Pipeline">
-          <figcaption class="has-text-centered">Overview of the proposed pipeline.</figcaption>
-        </figure>
       </div>
     </div>
-  </div>
-</section>
-  
+  </section>
 
+  <!-- Abstract 文字部分 -->
+  <section class="section hero is-light">
+    <div class="responsive-container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified responsive-text">
+            <p>
+              This paper presents a novel framework that enables real-world humanoid robots to maintain stability while performing human-like motion. Current methods train a policy which allows humanoid robots to follow human body using the massive retargeted human data via reinforcement learning. However, due to the heterogeneity between human and humanoid robot motion, directly using retargeted human motion reduces training efficiency and stability. To this end, we introduce SMAP, a novel whole-body tracking framework that bridges the gap between human and humanoid action spaces, enabling accurate motion mimicry by humanoid robots. The core idea is to use a vector-quantized periodic autoencoder to capture generic atomic behaviors and adapt human motion into physically plausible humanoid motion. This adaptation accelerates training convergence and improves stability when handling novel or challenging motions. We then employ a privileged teacher to distill precise mimicry skills into the student policy with a proposed decoupled reward. We conduct experiments in simulation and real world and demonstrate the superiority stability and performance of our approach over state-of-the-art methods, offering practical guidelines for advancing whole-body control in humanoid robots.
+            </p>
+            <figure class="image is-centered">
+              <img src="static/images/pipeline.png" alt="Pipeline">
+              <figcaption class="has-text-centered">Overview of the proposed pipeline.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+  
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
+  
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
