@@ -2,22 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta name="description" content="Controllable motion in-betweening is essential for character animation, particularly when fine-grained control over both motion style and dynamic attributes is required. However, existing approaches typically model style using full-body motion representations, limiting their ability to independently manipulate the motion characteristics of different body parts. In this work, we introduce a novel phase-based framework that enables part-wise control over both motion style and dynamics. We first derive body-part-specific phase features using a kinematic-chain-based decomposition, allowing each limb to be represented in its motion phase space. Building upon these features, we develop a body-part-phase-based style encoder that captures part-level stylistic attributes and supports flexible style modification across different limbs. To regulate dynamic attributes such as amplitude and frequency, we further propose a Part-Aware Motion CVAE, whose phase-conditioned Body Part Mixture of Experts (BPMoE) decoder predicts motion transitions from the current motion state, body-part phases, and a latent control signal. By modulating the input phase features, our framework precisely adjusts the temporal dynamics of targeted body parts while maintaining global motion coherence. Experiments on the 100STYLE dataset show that our method enables fine-grained body-part control, produces consistent long-horizon sequences, and achieves smooth style transitions.">
+  <meta property="og:title" content="Towards Generative and Editable Motion In-Betweening Through Part-Wise Phase Representation"/>
+  <meta property="og:description" content="Controllable motion in-betweening is essential for character animation, particularly when fine-grained control over both motion style and dynamic attributes is required. However, existing approaches typically model style using full-body motion representations, limiting their ability to independently manipulate the motion characteristics of different body parts. In this work, we introduce a novel phase-based framework that enables part-wise control over both motion style and dynamics. We first derive body-part-specific phase features using a kinematic-chain-based decomposition, allowing each limb to be represented in its motion phase space. Building upon these features, we develop a body-part-phase-based style encoder that captures part-level stylistic attributes and supports flexible style modification across different limbs. To regulate dynamic attributes such as amplitude and frequency, we further propose a Part-Aware Motion CVAE, whose phase-conditioned Body Part Mixture of Experts (BPMoE) decoder predicts motion transitions from the current motion state, body-part phases, and a latent control signal. By modulating the input phase features, our framework precisely adjusts the temporal dynamics of targeted body parts while maintaining global motion coherence. Experiments on the 100STYLE dataset show that our method enables fine-grained body-part control, produces consistent long-horizon sequences, and achieves smooth style transitions."/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Towards Generative and Editable Motion In-Betweening Through Part-Wise Phase Representation">
+  <meta name="twitter:description" content="Controllable motion in-betweening is essential for character animation, particularly when fine-grained control over both motion style and dynamic attributes is required. However, existing approaches typically model style using full-body motion representations, limiting their ability to independently manipulate the motion characteristics of different body parts. In this work, we introduce a novel phase-based framework that enables part-wise control over both motion style and dynamics. We first derive body-part-specific phase features using a kinematic-chain-based decomposition, allowing each limb to be represented in its motion phase space. Building upon these features, we develop a body-part-phase-based style encoder that captures part-level stylistic attributes and supports flexible style modification across different limbs. To regulate dynamic attributes such as amplitude and frequency, we further propose a Part-Aware Motion CVAE, whose phase-conditioned Body Part Mixture of Experts (BPMoE) decoder predicts motion transitions from the current motion state, body-part phases, and a latent control signal. By modulating the input phase features, our framework precisely adjusts the temporal dynamics of targeted body parts while maintaining global motion coherence. Experiments on the 100STYLE dataset show that our method enables fine-grained body-part control, produces consistent long-horizon sequences, and achieves smooth style transitions.">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MIB-BodyPartPhase</title>
+  <title>Towards Generative and Editable Motion In-Betweening Through Part-Wise Phase Representation</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -74,29 +74,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Towards Synthesized and Editable Motion In-Betweening Through Part-Wise Phase Representation</h1>
+            <h1 class="title is-2 publication-title">Towards Generative and Editable Motion In-Betweening Through Part-Wise Phase Representation</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://jixiii.github.io/" target="_blank">Minyue Dai</a><sup>1,2</sup>,</span>
-              <span class="author-block">
-                <a href="https://wangjingbo1219.github.io/" target="_blank">Jingbo Wang</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://vankouf.github.io/" target="_blank">Ke Fan</a><sup>3</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=uZeBvd8AAAAJ&hl=en" target="_blank">Bin Ji</a><sup>3</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=ymXRJBYAAAAJ&hl=zh-CN" target="_blank">Haoyu Zhao</a><sup>4</sup>,</span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=dEzL5pAAAAAJ&hl=zh-CN&oi=ao" target="_blank">Junting Dong</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://daibo.info/" target="_blank">Bo Dai</a><sup>5</sup>
-              </span>
+              <span class="author-block"><a href="https://jixiii.github.io/" target="_blank">Minyue Dai</a><sup>1,2</sup>,</span>
+              <span class="author-block"><a href="https://vankouf.github.io/" target="_blank">Ke Fan</a><sup>3</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=uZeBvd8AAAAJ&hl=en" target="_blank">Bin Ji</a><sup>4</sup>,</span>
+              <span class="author-block">Haoran Xu<sup>5</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=ymXRJBYAAAAJ&hl=zh-CN" target="_blank">Haoyu Zhao</a><sup>6</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=dEzL5pAAAAAJ&hl=zh-CN&oi=ao" target="_blank">Junting Dong</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://wangjingbo1219.github.io/" target="_blank">Jingbo Wang</a><sup>2*</sup>,</span>
+              <span class="author-block"><a href="https://daibo.info/" target="_blank">Bo Dai</a><sup>7*</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Fudan University, <sup>2</sup>Shanghai Artificial Intelligence Laboratory, <br>
-                <sup>3</sup>Shanghai Jiaotong University, <sup>4</sup>Wuhan University, <sup>5</sup>University of Hong Kong</span>
+              <span class="author-block"><sup>1</sup>Fudan University, China</span>
+              <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory, China</span><br>
+              <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University, China</span>
+              <span class="author-block"><sup>4</sup>East China University of Science and Technology, China</span><br>
+              <span class="author-block"><sup>5</sup>Hong Kong University of Science and Technology, China</span>
+              <span class="author-block"><sup>6</sup>The Chinese University of Hong Kong, China</span><br>
+              <span class="author-block"><sup>7</sup>The University of Hong Kong, China</span>
+              <br><span class="author-block"><sup>*</sup>Corresponding authors.</span>
             </div>
 
             <div class="column has-text-centered">
@@ -158,7 +156,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified responsive-text">
             <p>
-              This paper presents a novel framework that enables real-world humanoid robots to maintain stability while performing human-like motion. Current methods train a policy which allows humanoid robots to follow human body using the massive retargeted human data via reinforcement learning. However, due to the heterogeneity between human and humanoid robot motion, directly using retargeted human motion reduces training efficiency and stability. To this end, we introduce SMAP, a novel whole-body tracking framework that bridges the gap between human and humanoid action spaces, enabling accurate motion mimicry by humanoid robots. The core idea is to use a vector-quantized periodic autoencoder to capture generic atomic behaviors and adapt human motion into physically plausible humanoid motion. This adaptation accelerates training convergence and improves stability when handling novel or challenging motions. We then employ a privileged teacher to distill precise mimicry skills into the student policy with a proposed decoupled reward. We conduct experiments in simulation and real world and demonstrate the superiority stability and performance of our approach over state-of-the-art methods, offering practical guidelines for advancing whole-body control in humanoid robots.
+              Controllable motion in-betweening is essential for character animation, particularly when fine-grained control over both motion style and dynamic attributes is required. However, existing approaches typically model style using full-body motion representations, limiting their ability to independently manipulate the motion characteristics of different body parts. In this work, we introduce a novel phase-based framework that enables part-wise control over both motion style and dynamics. We first derive body-part-specific phase features using a kinematic-chain-based decomposition, allowing each limb to be represented in its motion phase space. Building upon these features, we develop a body-part-phase-based style encoder that captures part-level stylistic attributes and supports flexible style modification across different limbs. To regulate dynamic attributes such as amplitude and frequency, we further propose a Part-Aware Motion CVAE, whose phase-conditioned Body Part Mixture of Experts (BPMoE) decoder predicts motion transitions from the current motion state, body-part phases, and a latent control signal. By modulating the input phase features, our framework precisely adjusts the temporal dynamics of targeted body parts while maintaining global motion coherence. Experiments on the 100STYLE dataset show that our method enables fine-grained body-part control, produces consistent long-horizon sequences, and achieves smooth style transitions.
             </p>
             <figure class="image is-centered">
               <img src="static/images/pipeline.png" alt="Pipeline">
